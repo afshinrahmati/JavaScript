@@ -24,7 +24,10 @@ const e = document.createElement("div"); // allocates a DOM element
 // memory Heap is a place
 // Heap: It is used to store objects and functions in JavaScript. The engine doesn’t allocate a fixed amount of memory. Instead, it allocates more space as required.
 // Objects and functions + No limit for object memory
-
+// ** meain heap
+// an area of pre-reserved computer main storage ( memory ) that a program process can use to store data in some variable
+// amount that won't be known until the program is running
+// ** stack meain push and pop
 //  Stack: It is a data structure used to store static data. Static data refers to data whose size is known by the engine during compile time
 //. In JavaScript, static data includes primitive values like strings, numbers, boolean, null, and undefined.
 // References that point to objects and functions are also included. A fixed amount of memory is allocated for static data. This process is known as static memory allocation.
