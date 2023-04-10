@@ -44,10 +44,15 @@ const newEmployee = employee;
 
 const name = "Ram"; // Allocates memory statc
 
-// Stack in Memory Top ==> getname,employee,newEmployee,name  (push on and popped off)
+// Stack in Memory Top ==> primitive types linke number and boolean and undifine getname,employee,newEmployee,name  (push on and popped off)
 // Heap ==> {name:"Rajesh",age:30}, function getname(name) {return name;}
 
 //  Garbage Collection ==>Garbage collectors are used in releasing memory. Once the engine recognizes that a variable, object, or
 // function is not needed anymore, it releases the memory it occupied. The main issue here is that it is very difficult to predict
 // accurately whether a particular variable, object, or function is needed anymore or not. Some algorithms help to find the
 // moment when they become obsolete with great precision.
+
+// Memory leak ==> when language supporting auto garbage we dont need care about memory leakg
+// we have 3 memory leak
+// 1==> Global variables << var b = 90 ; 2)) Event Listeners << callBack onClick in eventloop 3)) setinterval << call func after some minuate like flash back green yellow blue in text color
+//  when working finshe auto deleted
