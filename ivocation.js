@@ -19,3 +19,19 @@ function marry(p1, p2) {
 }
 
 marry("ali", "afshin");
+
+function two() {
+  var isValid;
+  console.log(isValid, 1);
+}
+
+function one() {
+  var isValid = true;
+  console.log(isValid, 2);
+
+  two();
+}
+var isValid = false;
+one();
+
+console.log(isValid, 3);
