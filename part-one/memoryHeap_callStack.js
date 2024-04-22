@@ -24,4 +24,4 @@ calCulate();
 // Error Maximum call stack size exceeded
 
 
-// Garbage collector algorithm use is Mark and sweep
+// Garbage collector algorithm use is Mark and sweep ==> mark run and sweep delete it.
