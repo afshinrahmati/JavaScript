@@ -1,6 +1,6 @@
 // that mean is up ==> just var or function
 // Before js run my code all variable and function
-// changing automaticly like standard
+// changing automaticaly like standard
 // first the function alocate in memory then var 
 smile();
 
