@@ -3,7 +3,7 @@
 // by a pair of parentheses. You can also pass arguments to the function by writing them inside
 // the parentheses
 
-
+// function Invocation/Call/Execution
 const canada = function() {
     console.log("the weather is so cold")
 }

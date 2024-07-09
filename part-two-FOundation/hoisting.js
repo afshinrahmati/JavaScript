@@ -3,10 +3,15 @@
 // changing automaticaly like standard
 // first the function alocate in memory then var 
 smile();
+arrow() //error because arrow funtion not handle global and hoisting
 
 function smile() {
   console.log("test");
 }
+const arrow = ()=>{
+  console.log(410)
+}
+
 
 // var
 
