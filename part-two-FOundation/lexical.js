@@ -14,3 +14,11 @@ function outerFunction() {
   }
   
   outerFunction();
+
+
+  // Define a class with a static method in gloabl stac
+class Utility {
+  static globalMethod() {
+      console.log("This is a global method.");
+  }
+}
