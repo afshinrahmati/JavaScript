@@ -1,3 +1,4 @@
+// 2008 created by google
 function test() {
     return 74;
 };
