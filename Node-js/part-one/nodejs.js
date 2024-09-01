@@ -7,4 +7,13 @@
 
 // it is not langaue or framework it is just runtime.
 // in chrome we have a v8 Engine but in Node we have libuv
-// libuv: is a multi-platform C library thar provides support for asynchronous I/o bases on eventloop
+// libuv: is a multi-platform C library that provides support for asynchronous I/o bases on eventloop
+
+// ### REPL ###<read,evals,prints,loops>
+// the shell reads javascript code the user
+// and evaluates the result of interpreting the line of code
+// prints the result to the user
+// loops until the user signals to quit.
+// The REPL is bundled with every Node.js installation and allows you to quickly test and explore  all the instruction are in terminal called REPL
+// REPL ==> Read,Eval,Print,loop
+// JavaScript code within the Node environment without having to store it in a file.
