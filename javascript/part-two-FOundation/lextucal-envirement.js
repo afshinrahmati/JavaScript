@@ -1,0 +1,1 @@
+//  lextucal-envirement ==> is a data structure that stores all variables and function declaration
