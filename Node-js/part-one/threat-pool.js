@@ -13,6 +13,7 @@
 
 // Default Size: The default size of the thread pool is 4, which can be adjusted based on the needs of the application using the UV_THREADPOOL_SIZE environment variable.
 
+//  if the threat is full it go to callBack Queeus
 const fs = require('fs');
 
 // Task detected by the event loop
