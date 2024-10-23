@@ -121,3 +121,10 @@ console.log('This will run after the file is read second it');
 // - **Threads**: Multiple threads run in parallel, and can block depending on the operation.
 
 // In other languages, **threads** allow for **parallel execution** of code, while the **event loop** in JavaScript provides a way to manage asynchronous tasks without blocking the main execution flow—while still using a single thread.
+
+
+
+
+// nodejs 
+// when nodejs on eventloop block or cpu got heavey and crash it is very bad
+// node is really good at sering data for heavy I O application like video streaming 
