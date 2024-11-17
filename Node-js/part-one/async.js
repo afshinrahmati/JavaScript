@@ -128,3 +128,48 @@ console.log('This will run after the file is read second it');
 // nodejs 
 // when nodejs on eventloop block or cpu got heavey and crash it is very bad
 // node is really good at sering data for heavy I O application like video streaming 
+
+
+// ####### PROBLEM Async ##########
+// 1) Callback Hell :Deeply nested callbacks, often resulting in hard-to-read and unmaintainable code.
+
+db.query("SELECT * FROM users", (err, users) => {
+  if (err) return handleError(err);
+  users.forEach((user) => {
+      fetchUserDetails(user.id, (err, details) => {
+          if (err) return handleError(err);
+          console.log(details);
+      });
+  });
+});
+
+// soulution Use Promises or async/await to avoid nesting.
+async function fetchUsers() {
+  try {
+      const users = await db.query("SELECT * FROM users");
+      for (const user of users) {
+          const details = await fetchUserDetails(user.id);
+          console.log(details);
+      }
+  } catch (err) {
+      handleError(err);
+  }
+}
+// 2. Unhandled Promise Rejections
+// Forgetting to handle .catch() or wrapping async/await in try/catch can lead to silent failures.
+// 3. Blocking the Event Loop
+// Performing CPU-intensive tasks (e.g., data processing) on the main thread blocks the event loop, causing delays for other requests.
+// solution---> Offload CPU-bound tasks to worker threads or microservices.const { Worker } = require("worker_threads");
+
+function performTaskInWorker(data) {
+  return new Promise((resolve, reject) => {
+      const worker = new Worker("./worker.js", { workerData: data });
+      worker.on("message", resolve);
+      worker.on("error", reject);
+  });
+}
+//4.Race Conditions,5.Overloading the Database,6.Memory Leaks
+
+
+// RXJS
+// with RXJS you can observ that event are in in the event loop
