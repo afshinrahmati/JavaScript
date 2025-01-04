@@ -17,3 +17,11 @@
 // The REPL is bundled with every Node.js installation and allows you to quickly test and explore  all the instruction are in terminal called REPL
 // REPL ==> Read,Eval,Print,loop
 // JavaScript code within the Node environment without having to store it in a file.
+
+
+
+// What is the difference between process.nextTick() and setImmediate()?
+// both of them for do for run the code
+// process.nextTick(): Executes callbacks immediately after the current operation completes, before the event loop continues. 
+// not go to event lopp phases and it run immediately on eventlopp and it is good for force job
+// setImmediate(): Executes callbacks in the check phase of the event loop, after the poll phase. it is diffulet on ndoejs
