@@ -1,4 +1,7 @@
 //Node.js:
+// Step 1) ==> javascript_code ---> parse_code(string) with c++ ---> send_to_javascript_core(v8).
+// Step Deno) ==> javascript_code ---> parse_code(string) with RUST ---> send_to_javascript_core(v8).
+// Step BUN) ==> javascript_code  send_to_javascript_core(v8).
 
 // Node.js is a JavaScript runtime environment built on the V8 engine. It allows JavaScript to run outside of the browser, typically on a server or in any non-browser environment.
 //     Node.js adds a layer of APIs specific to server-side programming, such as file system access, networking, and process management.
