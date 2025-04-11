@@ -1,0 +1,1 @@
+// ecmascript that's standard that all the browser for create the website should Compliance
